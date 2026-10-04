@@ -1,0 +1,16 @@
+.table-responsive { width: 100%; overflow-x: auto; background-color: white; border-radius: 6px; border: 1px solid #dee2e6; }
+.custom-table { width: 100%; border-collapse: collapse; text-align: left; }
+.custom-table th, .custom-table td { padding: 12px 15px; border-bottom: 1px solid #dee2e6; vertical-align: middle; }
+.custom-table th { background-color: #f1f3f5; color: #495057; font-weight: 600; }
+.table-preview-img { width: 60px; height: 60px; object-fit: cover; border-radius: 4px; border: 1px solid #dee2e6; }
+.badge { padding: 4px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; text-transform: uppercase; }
+.badge-hobby { background-color: #e2f0d9; color: #385723; }
+.badge-profi { background-color: #fff2cc; color: #7f6000; }
+.badge-premium { background-color: #fce4d6; color: #c65911; }
+.btn-action { padding: 6px 12px; font-weight: 500; border-radius: 4px; border: none; cursor: pointer; margin-right: 5px; }
+.btn-update { background-color: #ffc107; color: #212529; }
+.btn-update:hover { background-color: #e0a800; }
+.btn-delete { background-color: #dc3545; color: white; }
+.btn-delete:hover { background-color: #c82333; }
+.nested-form-td { background-color: #fdfffe; padding: 20px !important; }
+.update-form-wrapper { border-left: 4px solid #ffc107; padding-left: 15px; background: #fff; }

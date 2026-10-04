@@ -1,0 +1,137 @@
+.nav-main-link {
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding: 0 20px 0 120px;
+    color: rgba(255, 221, 0, 1);
+    background-color: rgba(31, 44, 66, 1);
+    background-repeat: no-repeat;
+    background-position: 10px -86px;
+}
+
+
+
+.nav-main-link.active {
+    color: rgb(61, 82, 117);
+    background-color: rgba(255, 221, 0, 1);
+    background-position: 10px 0;
+}
+
+
+.nav-main-link:hover {
+    background-position: 10px -172px;
+    /* color: rgb(255, 255, 255); */
+}
+
+.nav-main-link.active:hover {
+    background-position: 10px -258px;
+    /* color: rgb(255, 255, 255); */
+}
+
+
+
+
+.gun-germetic {
+    background-image: url("../../assets/img/gun-1.svg");
+}
+
+.gun-pena {
+    background-image: url("../../assets/img/gun-2.svg");
+}
+
+
+
+
+
+.groups {
+    position: absolute;
+    display: flex;
+    /* background-color: rgb(253, 253, 253); */
+    width: 100%;
+    height: auto;
+    color: black;
+  
+}
+
+.groups-fomeron {
+    right: 0;
+    height: auto;
+}
+
+.group {
+    position: relative;
+    width: 33%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.95);
+    transition: all 1s;
+
+}
+
+.group:not(:last-child) {
+    margin-right: 0.5%;
+}
+
+.group h3 {
+    font-size: 1.0rem;
+    margin-left: 8%;
+    text-transform: uppercase;
+}
+
+.group ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .group li {
+} */
+
+.dropdown-menu li {
+    font-size: 0.85rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    /* margin:0 auto 2px -35px; */
+
+}
+
+.dropdown-menu li a{
+    display: flex;
+    width: calc(100%-20px);
+    align-items: center;
+        padding: 0 10px;
+}
+
+
+/* Эффект при наведении на подссылку */
+.dropdown-menu li a:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Стили для активной подссылки (автоматически от react-router-dom) */
+.dropdown-menu li a.active {
+    font-weight: bold;
+    background-color: #ffffff;
+    /* Например, красный цвет для активного пункта */
+}
+
+.menu-item-preview {
+    display: block;
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.dropdown-menu span {
+    /* position: absolute; */
+
+    display: inline-block;
+    display: block;
+    margin: 0px 20px;
+    padding: 0;
+}

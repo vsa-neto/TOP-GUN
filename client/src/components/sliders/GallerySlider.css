@@ -1,0 +1,100 @@
+/* .gallery-container {
+  position: relative;
+  z-index: 1; 
+} */
+
+.gallery-container {
+  position: relative;
+  width: 50%;
+  max-width: 800px; /* Укажите нужную ширину контейнера */
+  margin: 0 40px 0 0;
+}
+
+/* Главный слайдер */
+.main-swiper {
+  width: 100%;
+  height: 450px; /* Высота главного слайдера */
+  /* border-radius: 12px; */
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-color: #000;
+}
+
+.main-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-swiper .swiper-slide img,
+.main-swiper .swiper-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Или contain, если важно показывать картинку целиком */
+}
+
+/* Слайдер с миниатюрами */
+.thumbs-swiper {
+  width: 100%;
+  height: 80px; /* Высота миниатюр */
+  box-sizing: border-box;
+}
+
+.thumbs-swiper .swiper-slide {
+  height: 100%;
+
+  opacity: 0.5; /* Неактивные миниатюры полупрозрачные */
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+  border-color:  rgba(31, 44, 66, 0.5);
+  margin-right: 10px;
+}
+
+.thumbs-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Активная миниатюра */
+.thumbs-swiper .swiper-slide-thumb-active {
+  opacity: 1;
+  border-color: #007aff; /* Цвет рамки активной миниатюры */
+}
+
+/* Кастомизация стрелок навигации главного слайдера */
+.main-swiper .swiper-button-next,
+.main-swiper .swiper-button-prev {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 40px;
+  height: 40px;
+  border-radius: 5%;
+  transition: background-color 0.3s ease;
+}
+
+.main-swiper .swiper-button-next:hover,
+.main-swiper .swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-swiper .swiper-button-next::after,
+.main-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Цвет пагинации */
+.main-swiper .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+
+/* .slide {
+    width: 50%;
+    height: 50vh;
+    background-color: aqua;
+} */
